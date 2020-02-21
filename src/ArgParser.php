@@ -42,7 +42,7 @@ class ArgParser
         foreach ($this->args as $arg) {
             list($value, $arg) = $this->splitArg($arg);
 
-            if ($arg{0} == '-' && $name == $arg) {
+            if ($arg[0] == '-' && $name == $arg) {
                 return $value;
             }
         }
