@@ -28,7 +28,7 @@ class ArgParser
     protected function numericArg(int $position): string
     {
         foreach ($this->args as $arg) {
-            if ($arg{0} != '-' && $position-- == 0) {
+            if ($arg[0] != '-' && $position-- == 0) {
                 return $arg;
             }
         }
